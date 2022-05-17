@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f7f7f7;
+}
+.banner {
+  padding: 0 500px;
+}
+.banner .container {
+  margin-top: 100px;
+  background-image: url(../img/banner1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+  padding: 45px 35px;
+}
+.banner .container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.banner .container .banner-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner .container h1 {
+  color: white;
+  margin-top: 70px;
+}
+.banner .container p {
+  color: white;
+  font-weight: 300;
+}
+.banner .container a {
+  text-decoration: none;
+  color: white;
+}
+.banner .container .banner-head .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.banner .container .banner-head .contact a {
+  color: white;
+  background-color: #ff6600;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ff6600;
+}
+.banner .container button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 4px 10px;
+  margin-top: 20px;
+}
+.banner-content {
+  padding: 0 500px;
+}
+.banner-content .container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 50px 80px;
+  justify-content: space-between;
+}
+.banner-content .container .title {
+  margin-right: 50px;
+}
+.banner-content .container .title h2 {
+  font-weight: 400;
+}
+.categories {
+  padding: 0 500px;
+}
+.categories .container {
+  background-color: white;
+}
+.categories .container .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px 80px;
+}
+.categories .container .row img {
+  width: 100%;
+  border-radius: 5px;
+}
+.categories .container .row h3 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.favorites {
+  padding: 0 500px;
+}
+.favorites .container {
+  background-color: #f1f0f7;
+}
+.favorites .container img {
+  width: 100%;
+}
+.favorites .container .favorites-content {
+  display: flex;
+  align-items: center;
+  padding: 50px 30px;
+}
+.favorites .container .favorites-content .thumb {
+  flex: 0 0 50%;
+}
+.favorites .container .favorites-content .thumb-text {
+  padding: 0 50px;
+}
+.favorites .container .favorites-content .thumb-text h3 {
+  font-size: 25px;
+}
+.favorites .container .favorites-content .thumb-text p {
+  font-weight: 300;
+}
+.favorites .container a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.favorites .container .favorites-content .thumb-text button {
+  background-color: #ff6600;
+  border: 1px solid #ff6600;
+  border-radius: 5px;
+  padding: 12px 24px;
+}
+.order {
+  padding: 0 500px;
+}
+.order .container {
+  background-image: url(../img/banner2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  padding: 100px 0px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.order .container::before {
+  content: "";
+  background-color: rgb(16 15 19 / 80%);
+  position: absolute;
+  top: 0;
+  height: 400px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.order .container h1 {
+  color: white;
+}
+.order .container p {
+  color: white;
+  margin: 25px 0;
+}
+.order .container button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 5px;
+}
+.deliciouness {
+  padding: 0 500px;
+}
+.deliciouness .container {
+  background-color: white;
+  padding: 80px 50px;
+  text-align: center;
+}
+.deliciouness .container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.deliciouness .container p {
+  margin: 30px 0px;
+}
+.deliciouness .container button {
+  background-color: #ff6600;
+  border: 1px solid #ff6600;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.footer {
+  padding: 0 500px;
+}
+.footer .container {
+  background-color: black;
+}
+.footer .container .content-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px;
+  color: white;
+}
+.footer .container .content-head p {
+  font-weight: 400;
+  color: #a0a0a0;
+}
+.footer .container .content-head a {
+  color: #7d7c7c;
+  text-decoration: none;
+}
+.footer .container .content-end .content {
+  border-top: 1px solid #0d0d0d;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.footer .container .content-end .content p {
+  margin-bottom: 0;
+}
+.footer .container .content-end .content a {
+  text-decoration: none;
+  color: white;
+}
+.footer .container .content-end .content .I {
+  border-left: 1px solid white;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+@media screen and (min-width: 993px) {
+  .banner {
+    padding: 0;
+  }
+  .banner-content {
+    padding: 0;
+  }
+  .categories {
+    padding: 0;
+  }
+  .favorites {
+    padding: 0;
+  }
+  .order {
+    padding: 0;
+  }
+  .deliciouness {
+    padding: 0;
+  }
+  .footer {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .banner {
+    padding: 0;
+  }
+  .banner-content {
+    padding: 0;
+  }
+  .categories {
+    padding: 0;
+  }
+  .favorites {
+    padding: 0;
+  }
+  .order {
+    padding: 0;
+  }
+  .deliciouness {
+    padding: 0;
+  }
+  .footer {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner {
+    padding: 0;
+  }
+  .banner-content {
+    padding: 0;
+  }
+  .categories {
+    padding: 0;
+  }
+  .favorites {
+    padding: 0;
+  }
+  .order {
+    padding: 0;
+  }
+  .deliciouness {
+    padding: 0;
+  }
+  .footer {
+    padding: 0;
+  }
+  .banner-content .container {
+    padding: 50px 10px;
+  }
+  .categories .container .row {
+    display: block;
+    padding: 0;
+  }
+  .favorites .container .favorites-content {
+    display: block;
+    padding: 30px 0;
+  }
+  .favorites .container .favorites-content .thumb-text {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .deliciouness .container {
+    text-align: left !important;
+  }
+  .deliciouness .container p {
+    text-align: left !important;
+  }
+  .footer .container .content-head {
+    display: block;
+  }
+}

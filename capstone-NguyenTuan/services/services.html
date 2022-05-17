@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./services.css" />
+  </head>
+  <body id="black">
+    <section class="header">
+      <div class="container">
+        <div class="head">
+          <div class="title">
+            <h1><a href="">Diner</a></h1>
+          </div>
+          <div class="content">
+            <div class="search">
+              <form action="">
+                <input
+                  class="search_input"
+                  type="search"
+                  name="search"
+                  placeholder="Search here.."
+                />
+                <i class="fa fa-search search__icon"></i>
+              </form>
+            </div>
+            <div class="icon">
+              <button onclick="hide()"><i class="fas fa-moon"></i></button>
+            </div>
+            <div class="menu">
+              <button onclick="Menu()" id="trigger-overplay" type="button">
+                <i class="fa fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <span>services</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="mn" style="display: none" class="menu-list">
+      <ul style="list-style: none">
+        <li><a href="">Home</a></li>
+        <li><a href="/About_Us/index.html">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a target="blank" href="../blog/blog.html">Blog</a></li>
+        <li><a href="">404</a></li>
+        <li><a href="">Landing Page</a></li>
+        <li><a href="/Contact/index.html">Contact</a></li>
+        <li><a href="">Shot codes</a></li>
+        <li><a target="_blank" href="../email/email.html">Email</a></li>
+      </ul>
+      <button onclick="menuClose()"><i class="fas fa-window-close"></i></button>
+    </section>
+    <section class="offer">
+      <div class="container">
+        <div class="content">
+          <div class="content-left">
+            <div class="title">
+              <h4 style="color: #ff6600">Wht We Offer</h4>
+              <h4>We found our creative space that is open for you.</h4>
+            </div>
+          </div>
+          <div class="content-right">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+              ipsum delectus nihil nesciunt blanditiis, obcaecati corrupti ullam
+              quidem numquam, fugit ut facilis. Aspernatur, nesciunt deserunt.
+              Voluptate, nobis. Facere, dolore quas.
+            </p>
+            <p>
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+              amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <div class="row">
+          <div class="item">
+            <div id="bg" class="test">
+              <div class="content">
+                <div class="icon">
+                  <span class="fa fa-users"></span>
+                </div>
+                <div class="info">
+                  <p>01</p>
+                  <h3><a id="C1" href="">Soup</a></h3>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div id="bg2" class="test">
+              <div class="content">
+                <div class="icon">
+                  <span class="fa fa-shield"></span>
+                </div>
+                <div class="info">
+                  <p>02</p>
+                  <h3><a id="C2" href="">Drinks</a></h3>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div id="bg3" class="test">
+              <div class="content">
+                <div class="icon">
+                  <span class="fa fa-thermometer-full"></span>
+                </div>
+                <div class="info">
+                  <p>03</p>
+                  <h3><a id="C3" href="">Pizza</a></h3>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="item mt-4">
+            <div id="bg4" class="test">
+              <div class="content">
+                <div class="icon">
+                  <span
+                    class="fa fa-american-sign-language-interpreting"
+                  ></span>
+                </div>
+                <div class="info">
+                  <p>04</p>
+                  <h3><a id="C4" href="">Breakfast</a></h3>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="item mt-4">
+            <div id="bg5" class="test">
+              <div class="content">
+                <div class="icon">
+                  <span class="fa fa-paint-brush"></span>
+                </div>
+                <div class="info">
+                  <p>05</p>
+                  <h3><a id="C5" href="">Lunch</a></h3>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="item mt-4">
+            <div id="bg6" class="test">
+              <div class="content">
+                <div class="icon">
+                  <span class="fa fa-eraser"></span>
+                </div>
+                <div class="info">
+                  <p>06</p>
+                  <h3><a id="C6" href="">Dinner</a></h3>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="container">
+        <h1>Deliciousness jumping into the mouth.</h1>
+        <a href="/About_Us/index.html">
+          <button class="btn_1">
+            Read More <span class="fa fa-chevron-right"></span></button
+        ></a>
+        <a href="/Contact/index.html">
+          <button class="btn_2">
+            Contact Us <span class="fa fa-chevron-right"></span></button
+        ></a>
+      </div>
+    </section>
+    <section class="pricing">
+      <div class="container">
+        <div class="title">
+          <h5>Plans</h5>
+          <h1>Our Menu</h1>
+        </div>
+        <div class="row">
+          <div class="item-1 item">
+            <div class="menu-item">
+              <div class="test">
+                <div class="name">
+                  <h4>Slow Cooked Egg</h4>
+                </div>
+                <div class="price">
+                  <h4>$79.50</h4>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet adipiscing.</p>
+            </div>
+            <div class="menu-item">
+              <div class="test">
+                <div class="name">
+                  <h4>Ravioli</h4>
+                </div>
+                <div class="price">
+                  <h4>$63.75</h4>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet adipiscing.</p>
+            </div>
+            <div class="menu-item">
+              <div class="test">
+                <div class="name">
+                  <h4>Chicken Salad</h4>
+                </div>
+                <div class="price">
+                  <h4>$70.50</h4>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet adipiscing.</p>
+            </div>
+            <div class="menu-item">
+              <div class="test">
+                <div class="name">
+                  <h4>Sweet Heat Salad</h4>
+                </div>
+                <div class="price">
+                  <h4>$58.25</h4>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet adipiscing.</p>
+            </div>
+          </div>
+          <div class="item-1">
+            <div class="menu-item">
+              <div class="test">
+                <div class="name">
+                  <h4>Spinach Chicken</h4>
+                </div>
+                <div class="price">
+                  <h4>$63.75</h4>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet adipiscing.</p>
+            </div>
+            <div class="menu-item">
+              <div class="test">
+                <div class="name">
+                  <h4>Tomahawk Steak</h4>
+                </div>
+                <div class="price">
+                  <h4>$70.50</h4>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet adipiscing.</p>
+            </div>
+            <div class="menu-item">
+              <div class="test">
+                <div class="name">
+                  <h4>Cornish Turbot</h4>
+                </div>
+                <div class="price">
+                  <h4>$58.25</h4>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet adipiscing.</p>
+            </div>
+            <div class="menu-item">
+              <div class="test">
+                <div class="name">
+                  <h4>Permanent Waving</h4>
+                </div>
+                <div class="price">
+                  <h4>$79.50</h4>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet adipiscing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="head">
+        <div class="container">
+          <div class="content">
+            <div class="item-1">
+              <h1><a href="">Diner</a></h1>
+              <p>
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+                amet Semper at elit.
+              </p>
+              <div class="icon">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""> <i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="item-2">
+              <h1>Userfull Links</h1>
+              <ul>
+                <a href="/About_Us/index.html"><li>About Us</li></a>
+                <a href="./services.html"> <li>Services</li> </a>
+                <a href="../blog/blog.html"> <li>Blog posts</li> </a>
+                <a href=""> <li>Careers</li> </a>
+                <a href="/Contact/index.html"> <li>Contact us</li> </a>
+              </ul>
+            </div>
+            <div class="item-2 item-2_2">
+              <h1>More info</h1>
+              <ul>
+                <a href=""><li>History</li></a>
+                <a href=""> <li>Vision & Values</li> </a>
+                <a href=""> <li>Awards</li> </a>
+                <a href=""> <li>Media</li> </a>
+                <a href=""> <li>Support</li> </a>
+              </ul>
+            </div>
+            <div class="item-3">
+              <h1>Subscribe to our Newsletter</h1>
+              <p>
+                Enter your email and receive the latest news, updates and
+                special offers from us.
+              </p>
+              <form action="">
+                <input
+                  type="email"
+                  class="email"
+                  name="email"
+                  placeholder="Your email Address"
+                />
+              </form>
+              <button>
+                <a href="">Subcribe Now</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="end">
+        <div class="container">
+          <div class="content">
+            <p>
+              © 2021 Diner. All rights reserved. Design by
+              <span>W3Layouts</span>
+            </p>
+            <div class="last">
+              <a href="">Careers</a>
+              <a href="">Privacy Policy</a>
+              <a href="/Contact/index.html">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vd">
+      <div class="container">
+        <video src="blob:https://demo.w3layouts.com/8d246932-4c62-4efe-9f9a-e745c88a4830"></video>
+        <div class="img"></div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./services.js"></script>
+  </body>
+</html>
