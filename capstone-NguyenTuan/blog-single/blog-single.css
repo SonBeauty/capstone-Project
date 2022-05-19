@@ -249,6 +249,23 @@ html {
   border: 1px solid white;
   border-radius: 5px;
 }
+.post .container .row .blog-left .comments .person-two{
+  margin-left: 80px;
+}
+.post .container .row .blog-left .comments  img{
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+}
+.post .container .row .blog-left .comments .message{
+  padding: 10px 20px;
+}
+.post .container .row .blog-left .comments p{
+  font-weight: 400;
+}
+.post .container .row .blog-left .comments a{
+  color: #ff6600;
+}
 .contact {
   background-color: #f7f7f7;
 }
