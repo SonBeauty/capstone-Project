@@ -4,6 +4,7 @@
   height: 400px;
   background-attachment: fixed;
   background-size: cover;
+  width: 100%;
 }
 p {
   margin: 0;
@@ -400,4 +401,95 @@ p {
 }
 .footer_End h3 {
   font-size: 20px;
+}
+@media screen and (max-width : 992px) {
+  .search {
+    position: absolute;
+    right: 70px;
+  }
+  .fa-magnifying-glass:before{
+    position: relative;
+    right: 25px;
+
+  }
+  .header .icon button {
+    right: 70px;
+  }
+  .menu{
+    position: relative;
+    left: 253px
+  }
+  .content_image img{
+    height: auto;
+    padding-top: 0; 
+    padding-left:0;
+    padding-right: 0;
+    border-radius: 5px;
+  }
+  .container{
+    max-width: 850px;
+  }
+  .content_info{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .What_we_do{
+    grid-template-columns: 1fr 1fr;
+  }
+  .we_do h3{
+    margin-top: 0;
+  }
+  .team_row{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .team_member{
+    margin-left: 0;
+  }
+  .footer .Email {
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width:768px){
+  .menu{
+    left: 203px;
+  }
+  .content{
+    display: block;
+  }
+  .container{
+    max-width: 540px;
+  }
+  .What_we_do{
+    display: block;
+  }
+  .we_do{
+    margin-bottom: 30px;
+  }
+  .team_member{
+    width: 40%;
+  }
+  .footer_2{
+    flex-wrap: wrap;
+  }
+  .footer .col-lg-4{
+    width: 45%;
+  }
+}
+@media  screen and (max-width:576px) {
+  .menu{
+    left: 110px;
+  }
+  .header{
+    height: 200px;
+  }
+  .container{
+    max-width: 510px;
+  }
+  .content_info{
+    margin-top: 34px;
+  }
+  .footer .footer_2_1{
+    margin-right: 20px;
+  }
 }
