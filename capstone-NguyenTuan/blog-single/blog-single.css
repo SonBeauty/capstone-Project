@@ -93,6 +93,66 @@ html {
   margin-right: 10px;
   font-size: 15px;
 }
+.menuleft {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin-top: 60px;
+  z-index: 100;
+}
+.menuleft .menuleft-container {
+  height: 345px;
+  width: 90px;
+  background-color: #0d1326;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  color: #fff;
+}
+.menuleft .menuleft-container li {
+  padding: 3px 0px;
+  list-style-type: none;
+  text-align: center;
+}
+.menuleft .menuleft-container p {
+  text-decoration: none;
+  /* color:#e6ebff;  */
+  text-align: center;
+  padding: 5px 0px;
+  opacity: 0.6;
+}
+.menuleft .menuleft-header {
+  width: 90px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuleft .menuleft-header i {
+  color: #e6ebff;
+  opacity: 0.6;
+  font-size: 18px;
+}
+.menuleft .menuleft-body a {
+  text-decoration: none;
+  color: #e6ebff;
+  font-family: "Quicksand", sans-serif;
+  opacity: 0.6;
+  font-size: 16px;
+}
+.menuleft .body-content {
+  width: 100%;
+  border-top: 1px solid #41414d;
+  padding-top: 20px;
+}
+.menuleft .body-content ul {
+  margin-left: -2rem;
+}
+.menuleft .body-content i {
+  font-size: 15px;
+}
+.menuleft .menuleft-body a:hover {
+  color: #e6ebff;
+}
 .menu-list {
   /* display: flex; */
   position: relative;
@@ -249,21 +309,21 @@ html {
   border: 1px solid white;
   border-radius: 5px;
 }
-.post .container .row .blog-left .comments .person-two{
+.post .container .row .blog-left .comments .person-two {
   margin-left: 80px;
 }
-.post .container .row .blog-left .comments  img{
+.post .container .row .blog-left .comments img {
   width: 100px;
   border-radius: 50%;
   height: 100px;
 }
-.post .container .row .blog-left .comments .message{
+.post .container .row .blog-left .comments .message {
   padding: 10px 20px;
 }
-.post .container .row .blog-left .comments p{
+.post .container .row .blog-left .comments p {
   font-weight: 400;
 }
-.post .container .row .blog-left .comments a{
+.post .container .row .blog-left .comments a {
   color: #ff6600;
 }
 .contact {
